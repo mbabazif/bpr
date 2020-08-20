@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/skin.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="./script/index.js"></script>
+     <style>
+            .dropdown {
+                        position: relative;
+                        display:inline-block;
+                       
+                    }
+                    .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: white;
+                        min-width: 150px;            
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 1;
+                    }
+                    .dropdown-content a {
+                        color: black; 
+                        text-decoration: none;
+                        display: block;
+                        text-align:left;
+                        margin-top:15px; 
+                        margin-bottom: 25px;
+                        margin-left: 5px;
+                        line-height:0%;
+                        
+                    }
+                    
+                    .dropdown-content a:hover {
+                    
+                    background-color:#ff7b00;
+                    
+                    
+                    color: white;
+                    
+                    }
+                    .iconbox-icon p a:hover {
+                    
+                    color:white;
+                    font-weight: 900;
+                    letter-spacing: 2px;
+                    
+                    }
+                    .dropdown-content a i:hover {
+                     background-color: #ff7b00 !important;
+                    }
+                    .dropdown:hover .dropdown-content {
+                    display: block;
+                  
+                    }
+                    #navbar ul li a{ 
+                        text-transform: capitalize;
+                    }
+                    
+                   #navbar ul li{
+                        margin-top: 10px;                       
+                        height: 30px;
+                    }
+                    .navbar-inverse .navbar-nav > li > a:hover{
+                        color: #000066 !important;
+    background-color: transparent;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color:  #000066 !important;
+                    }
+                    a:hover {
+    cursor:pointer;
+    color: #ff7b00;
+    
+    }
+                    .navbar-inverse .navbar-nav > li > a:focus{
+                        color:  #ff7b00 !important;
+    background-color: transparent;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color:  #ff7b00 !important;
+                    }
+                    
+    #top-header ul.social_links i:hover {
+    color: #ff7b00 !important;
+    }
+    .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #ff7b00 !important;
+    }
+    .navbar-inverse .navbar-toggle {
+    border-color: #ff7b00 !important
+    }
+    span{
+    color: dark#ff7b00 !important;
+    }
+    #faq .panel-title a:hover, body.light#ff7b00 #faq .panel-title a:active {
+    color: #ff7b00 !important;
+    }
+    #footer .footer-block a:hover{
+    color: #ff7b00 !important;
+    }
+    .icon-circle {
+    background-color: dark#ff7b00 !important;
+    }
+                    #moreCHAIRMAN {display: none;}
+                    #MIA {display: none;}
+                    #ELVIS {display: none;}
+                    #Gilbert {display: none;}
+    .nav > li > a {
+        position: relative;
+        display: block;
+        padding: 8px 8px;
+    }
+    
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+    .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+    height: 500px;
+    margin-bottom: 0%;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    }
+    }    
+    body {
+    background-color: #fff;
+    font-family: Segoe UI, Arial, Sans-Serif !important;
+    font-size: 14px;
+    color: #363636 !important;
+    line-height: 26px;
+    height: 100%;
+    min-height: 100%;
+    }
+    .btm-footer-links b:hover{
+    color: #ff7b00 !important;
+    }
+    </style>
+
+    <style>
+            .dropdown {
+                        position: relative;
+                        display:inline-block;
+                       
+                    }
+                    
+                    .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: #f9f9f9;
+                        min-width: 150px;            
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 1;
+                    }
+                    
+                    .dropdown-content a {
+                        color: black; 
+                        text-decoration: none;
+                        display: block;
+                        text-align:left;
+                        margin-top:25px; 
+                        margin-bottom: 25px;
+                        margin-left: 5px;
+                        line-height:1.0;
+                        
+                    }
+                    
+                    .dropdown-content a:hover {
+                    
+                    color:darkgoldenrod;
+                    font-weight: 900;
+                    font-style: italic;
+                    
+                    }
+                    
+                    .dropdown:hover .dropdown-content {
+                    display: block;
+                  
+                    }
+                    
+                   #navbar ul li{
+                        margin-top: 10px;
+                       
+                        height: 30px;
+                    }
+        body {
+         /* background: #212121;
+         font-size:22px;
+         line-height: 32px;
+         color: #ffffff; */
+         word-wrap:break-word !important;
+         font-family: 'Quicksand', sans-serif;
+         /* margin: 0;
+         padding: 0; */
+     }
+     /* h1 {
+         font-size: 60px;
+         text-align: center;
+         color: #FFF;
+         margin-top: 150px;
+         font-family: 'Russo One', sans-serif;
+         } */
+     h1 span {
+         color: #FF4649;
+     }
+     /* #container {
+         margin: 0 auto;
+     } */
+      
+     /* nav {
+         margin: 35px 0;
+         background-color: #FF4649;
+     } */
+     nav ul {
+         padding: 0;
+         margin: 0;
+         list-style: none;
+         position: relative;
+         }	
+     nav ul li {
+         display:inline-block;
+         /* background-color: #FF4649; */
+         }
+    .down{
+        background-color:  #ff4d4d
+    }
+     nav a {
+         display:block;
+         padding:10px;	
+         color:#FFF;
+         font-size:10px;
+         line-height: 10px;
+         text-decoration:none;
+     }
+     nav a:hover { 
+         background-color: #333; 
+     }
+     nav ul ul {
+         display: none;
+         position: absolute; 
+         /* top: 60px; 	 */
+     }	
+     nav ul li:hover > ul {
+         display:inherit;
+     }	
+     nav ul ul li {
+         width:230px;
+         float:none;
+         display:list-item;
+         position: relative;
+     }
+     nav ul ul ul li {
+         position: relative;
+         top:-60px; 
+         left:230px;
+     }
+     
+     /* nav ul ul li {
+         border: 1px solid white;
+     }	 */
+     li > a:after { content:  ' ▼'; }
+     li > a:only-child:after { content: ''; }
+     li > a:only-child:after { content: ''; }
+
+     #nav ul { /* submenu */ 
+  position:absolute; 
+  left:0; 
+  display:none; 
+  margin:0 0 0 -1px;
+  padding:0; 
+  list-style:none;
+  z-index:9999;
+}
+
+#nav ul li {
+  width:100px; 
+  float:left; 
+  z-index:9999;
+  border-top:1px solid #fff;
+
+}
+.dropdown_menu { visibility: visible; z-index: 100; }
+                 </style>
+</head>
+
+<body id="wrapper">
+
+    <section id="top-header" style="background-color:  #000033">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-7 col-xs-7 top-header-links">
+                    <ul class="contact_links">
+                        <li><i class="fa fa-phone"></i><a href="#">0788187200</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="#">info@bpr.rw</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-5 social">
+                    <ul class="social_links">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <header >
+            <nav class="navbar navbar-inverse" style="z-index: 2;">
+                <div class="container">
+                    <div class="row">
+                    <div class="navbar-header" > 
+                                       
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <h1><img src="img/log23.png" style="width:90%; height: 40%;"  id='Logo' ></h1></a><br>             
+                            <!-- <h1>Aspire</h1><span>Software Solutions</span></a> -->
+                    </div>
+                    <div id="navbar" class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <!-- <li><a href="features.html">Features</a></li> -->
+                            <li><a href="#">About BPR </a>
+ 
+                                <ul>
+                                        <li class="down"><a href="#">Under company information</a>
+                         
+                                            <ul>
+                                                        <li class="down"><a href="#">Our History</a></li>
+                                                        <li class="down"><a href="#">Vision and Mission statements</a></li>
+                                                        <li class="down"><a href="#">Our Values</a></li>
+                                                        <li class="down"><a href="#">Our Awards</a></li>
+                                                        <li class="down"><a href="#">Media</a>
+                                                            <ul>
+                                                                    <li class="down"><a href="#"> Latest news </a></li>
+                                                                    <li class="down"><a href="#">Social Media pages</a></li>
+                                                                    <li class="down"><a href="#">media Inquiries- contacts </a></li>
+                                                                </ul>
+                                                        <li class="down"><a href="#">Tenders </a></li>
+                                                        <li class="down"><a href="#">Careers</a>
+                                                        <!-- <li><a href="#">react</a>
+                                            
+                                                            <ul>
+                                                                <li><a href="#">React Native</a></li>
+                                                                <li><a href="#">React JS</a></li>
+                                                                <li><a href="#">Material Design</a></li>
+                                                            </ul>
+                                                        </li> -->
+                                                    </ul>
+                                                    </li>
+                                        <li class="down"><a href="">Under our team</a>
+                                        <ul>
+                                                <li class="down"><a href="#">Investor information </a></li>
+                                                <li class="down"><a href="#">Financial information</a></li>
+                                                
+                                                
+                                        </ul>
+                                        </li>
+                                        <li class="down"><a href="">Under Investor relations</a></li>
+                                        <!-- <ul>
+                                                <li><a href="#">React Native</a></li>
+                                                <li><a href="#">React JS</a></li>
+                                                <li><a href="#">Material Design</a></li>
+                                            </ul> -->
+                                        <!-- <li><a href="#">Node JS</a></li> -->
+                                       
+                                    </ul>
+                                    </li>
+
+                            <li><a href="portfolio.html">Retail</a>
+                            <ul>
+                                    <li class="down"><a href="#">Under Transactional accounts</a>
+                                        <ul>
+                                                <li class="down"><a href="#"> Ordinary current account </a></li>
+                                                <li class="down"><a href="#">Premium current account</a></li>
+                                                <li class="down"><a href="#">Tuza current Account </a></li>
+                                            </ul>
+                                        
+                                        </li>
+                                    <li class="down"><a href="#">Under saving accounts</a>
+                                        <ul>
+                                                <li class="down"><a href="#"> Hirwa saving account </a></li>
+                                                <li class="down"><a href="#">Gwiza saving account</a></li>
+                                                <li class="down"><a href="#">Abana saving account </a></li>
+                                                <li class="down"><a href="#">Giricumbi saving account </a></li>
+                                            </ul>
+                                    </li>
+                                    <li class="down"><a href="#">Under Loan Products</a>
+                                    <ul>
+                                            <li class="down"><a href="#">Car Loan </a></li>
+                                            <li class="down"><a href="#">Home Loan</a></li>
+                                            <li class="down"><a href="#">Home construction  </a></li>
+                                            <li class="down"><a href="#">Home Equity </a></li>
+                                            <li class="down"><a href="#">Personal Loan </a></li>
+                                        </ul>
+                                </li>
+                                    <li class="down"><a href="#">SME Banking</a>
+                                    <ul>
+                                            <li class="down"><a href="#">Overdrafts </a></li>
+                                            <li class="down"><a href="#">Business loans</a></li>
+                                            <li class="down"><a href="#">Asset finance  </a></li>
+                                            <li class="down"><a href="#">Trade finance </a></li>
+                                           
+                                        </ul>
+                                </li>
+                                        <!-- <ul>
+                                            <li><a href="#">React Native</a></li>
+                                            <li><a href="#">React JS</a></li>
+                                            <li><a href="#">Material Design</a></li>
+                                        </ul> -->
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- <li class="dropdown">
+                                    <a href="#" class="dropbtn">About Us</a>
+                                    <div class="dropdown-content">
+                                            <a href="" >Akika Organisation</a>
+                                           
+                                            <a href="" >Sponsors</a>
+                                            
+                                            <a href="">Executive Team</a>
+                                         
+                                    </div>
+        Corporate & Investment Banking
+                                </li>   -->
+                            <li><a href="faq.html"> Corporate & Investment Banking</a>
+                                <ul>
+                                        <li class="down"><a href="#">Lending products</a>
+                         
+                                            
+                                                    </li>
+                                        <li class="down"><a href="">Trade finance</a>
+                                        
+                                        </li>
+                                        <li class="down"><a href="">Treasury</a></li>
+                                        <li class="down"><a href="">Transactional Banking</a></li>
+                                    </ul>
+                            </li>
+                            
+                            <li ><a href="faq.html">Diaspora </a>
+                                <ul>
+                                        <li class="down"><a href="#">How to open an account, </a>
+                         
+                                            
+                                                    </li>
+                                        <li class="down"><a href="">Make Money transfers</a>
+                                        
+                                        </li>
+                                        <li class="down"><a href="">How to access and manage your account</a></li>
+                                        <li class="down"><a href="">How to Invest back home</a></li>
+                                        <li class="down"><a href=""> Apply for a loan</a></li>
+                                       
+                                    </ul>
+                            </li>
+                            <li ><a href="contact.html">Self-Service</a>
+                            <ul>
+                                    <li class="down"><a href="#">Agency banking</a>
+                                    <li class="down"><a href="#">Mobile banking</a>
+                                    <li class="down"><a href="#">Internet banking</a>
+                                    <li class="down"><a href="#">Card center</a>
+                                    <li class="down"><a href="#">ATMs</a>
+                                    <li class="down"><a href="#">Other Services</a>
+                                        <ul>
+                                                <li class="down"><a href="#">Remittances </a></li>
+                                                <li class="down"><a href="#">Foreign Exchange</a></li>
+                                                <li class="down"><a href="#">Call center</a></li>
+                                                
+                                                
+                                        </ul>
+                                        
+                                                </li>
+                                    <li class="down"><a href="">Quick Links</a>
+                                    <ul>
+                                            <li class="down"><a href="#">Customer Forms </a></li>
+                                            <li class="down"><a href="#">Tariff Guide</a></li>
+                                            
+                                            
+                                    </ul>
+                                    </li>
+                                    <li class="down"><a href="">Under Investor relations</a></li>
+                                    <!-- <ul>
+                                            <li><a href="#">React Native</a></li>
+                                            <li><a href="#">React JS</a></li>
+                                            <li><a href="#">Material Design</a></li>
+                                        </ul> -->
+                                    <!-- <li><a href="#">Node JS</a></li> -->
+                                   
+                                </ul>
+                            </li>
+                            <li><a href="login.html">Sign In</a></li>
+                            <li><a href="registration.html">Sign Up</a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--/.nav-ends -->
+
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/banner.jpg');"></div>
+                <div class="carousel-caption slide-up">
+                    <h1 class="banner_heading">Banki Yawe  <span>Ejo </span>Heza</h1>
+                    <p class="banner_txt">Your Bank Your Future.</p>
+                    <div class="slider_btn">
+                            <button type="button" class="btn btn-primary slide"><a href="" style="color:azure">Join Us now!</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="fill" style="background-image:url('img/banner-slide-2.jpg');"></div>
+                <div class="carousel-caption slide-up">
+                    <h1 class="banner_heading">Providing The <span>Highest </span>Lorem</h1>
+                    <p class="banner_txt">Lorem ipsum dolor sit amet sit legimus copiosae instructior eiut vix denique fierentis ea saperet inimicu utqui dolor oratio mnesarchum.</p>
+                    <div class="slider_btn">
+                            <button type="button" class="btn btn-primary slide"><a href="" style="color:azure">Join Us now!</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="fill" style="background-image:url('img/banner-slide-3.jpg');"></div>
+                <div class="carousel-caption slide-up">
+                    <h1 class="banner_heading">Providing The <span>Highest </span>Lorem</h1>
+                    <p class="banner_txt">Lorem ipsum dolor sit amet sit legimus copiosae instructior eiut vix denique fierentis ea saperet inimicu utqui dolor oratio mnesarchum.</p>
+                    <div class="slider_btn">
+                            <button type="button" class="btn btn-primary slide"><a href="" style="color:azure">Join Us now!</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 block">
+                    <div class="col-md-2 col-xs-2"><i class="fa fa-laptop feature_icon"></i></div>
+                    <div class="col-md-10 col-xs-10">
+                        <h4>100% Responsive</h4>
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.</p>
+                        <a href="#" class="readmore">Read More <i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 block">
+                    <div class="col-md-2 col-xs-2"><i class="fa fa-bullhorn feature_icon"></i></div>
+                    <div class="col-md-10 col-xs-10">
+                        <h4>Powerful Features</h4>
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.</p>
+                        <a href="#" class="readmore">Read More <i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 block">
+                    <div class="col-md-2 col-xs-2"><i class="fa fa-support feature_icon"></i></div>
+                    <div class="col-md-10 col-xs-10">
+                        <h4>Customer Support</h4>
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.</p>
+                        <a href="#" class="readmore">Read More <i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="image-holder col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-left">
+            <div class="background-imgholder">
+                <img src="img/1.jpg" alt="about" class="img-responsive" style="display:none;" />
+            </div>
+        </div>
+
+        <div class="container-fluid">
+
+            <div class="col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-2 col-xs-12 text-inner ">
+                <div class="text-block">
+                    <div class="section-heading">
+                        <h1>ABOUT <span>US</span></h1>
+                        <p class="subheading">Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut.</p>
+                    </div>
+
+                    <ul class="aboutul">
+                        <li> <i class="fa fa-check"></i>Vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.</li>
+                        <li> <i class="fa fa-check"></i>legimus copiosae instructior ei ut vix denique fierentis atqui mucius consequat ad pro.</li>
+                        <li> <i class="fa fa-check"></i>Ea saperet inimicu ut qui dolor oratio maiestatis ubique mnesarchum.</li>
+                        <li> <i class="fa fa-check"></i>Sanctus voluptatibus et per illum noluisse facilisis quo atqui mucius ad pro.</li>
+                        <li> <i class="fa fa-check"></i>At illum noluisse facilisis quo te dictas epicurei suavitate qui his ad.</li>
+                        <li> <i class="fa fa-check"></i>Tantas propriae mediocritatem id vix qui everti efficiantur an ocurreret consetetur.</li>
+                    </ul>
+
+                    <button type="button" class="btn btn-primary slide">Learn More  <i class="fa fa-caret-right"></i> </button>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="process">
+        <div class="container">
+            <div class="section-heading text-center">
+                <div class="col-md-12 col-xs-12">
+                    <h1>What <span>We Do</span></h1>
+                    <p class="subheading">Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset nam nostrud euismod volumus ne mei.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 block process-block">
+                    <div class="process-icon-holder">
+                        <div class="process-border">
+                            <span class="process-icon"><a href="#"><i class="fa fa-lightbulb-o feature_icon"></i></a></span></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">Idea</a></h4>
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 block process-block">
+                    <div class="process-icon-holder">
+                        <div class="process-border">
+                            <span class="process-icon"><a href="#"><i class="fa fa-cloud-download feature_icon"></i></a></span></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">Concept</a></h4>
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 block process-block">
+                    <div class="process-icon-holder">
+                        <div class="process-border">
+                            <span class="process-icon"><a href="#"><i class="fa fa-magic feature_icon"></i></a></span></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">Design</a></h4>
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 block process-block lastchild">
+                    <div class="process-icon-holder">
+                        <div class="process-border">
+                            <span class="process-icon"><a href="#"><i class="fa fa-cog feature_icon"></i></a></span></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">Develop</a></h4>
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="testimonial">
+        <div class="container">
+            <div class="section-heading text-center">
+                <div class="col-md-12 col-xs-12">
+                    <h1>What Our <span>Client Says</span></h1>
+                    <p class="subheading">Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset nam nostrud euismod volumus ne mei.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-12 block ">
+                    <div class="testimonial_box">
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset. </p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="testimonial_user">
+                        <div class="user-image"><img src="img/user1.png" alt="user" class="img-responsive" /></div>
+                        <div class="user-info">
+                            <h5>Lorem Ipsum</h5>
+                            <p>Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-12 block">
+                    <div class="testimonial_box">
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset. </p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="testimonial_user">
+                        <div class="user-image"><img src="img/user1.png" alt="user" class="img-responsive" /></div>
+                        <div class="user-info">
+                            <h5>Lorem Ipsum</h5>
+                            <p>Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 block">
+                    <div class="testimonial_box">
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset. </p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="testimonial_user">
+                        <div class="user-image"><img src="img/user1.png" alt="user" class="img-responsive" /></div>
+                        <div class="user-info">
+                            <h5>Lorem Ipsum</h5>
+                            <p>Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Address</h4>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.
+                        </p>
+                        <a href="#" class="learnmore">Learn More <i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Useful Links</h4>
+                        <hr/>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Community</h4>
+                        <hr/>
+                        <ul class="footer-links">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Free Goods</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
+                    <div class="footer-block">
+                        <h4>Recent Posts</h4>
+                        <hr/>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 copyright">
+                    Developed by <a href="#">Aspire Software Solutions</a> designed by <a href="#">Designing Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="panel">
+        <div id="panel-admin">
+            <div class="panel-admin-box">
+                <div id="tootlbar_colors">
+                    <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
+                    <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
+                    <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
+                    <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
+                    <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
+                    <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
+                </div>
+            </div>
+
+        </div>
+        <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
+    </div>
+
+</html>
